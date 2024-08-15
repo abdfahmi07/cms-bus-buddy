@@ -1,0 +1,17 @@
+/* .dataTable tbody tr td:first-child,
+.dataTable thead tr th:first-child, */
+.dataTable tbody tr td:nth-child(2),
+.dataTable thead tr th:nth-child(2)
+/* .dataTable tbody tr td:nth-child(3),
+.dataTable thead tr th:nth-child(3)  */ {
+  position: sticky;
+  left: 0;
+  background-color: white; /* Ensures the sticky column has the same background */
+  z-index: 1;
+}
+
+/* .dataTable thead tr th:first-child, */
+.dataTable thead tr th:nth-child(2)
+/* .dataTable thead tr th:nth-child(3)  */ {
+  z-index: 2; /* Ensures the header is above the table body */
+}
